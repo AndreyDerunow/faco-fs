@@ -2,7 +2,7 @@ FROM node:14 as client
 
 WORKDIR /app/client
 
-COPY client/package.json app/client
+COPY client/package.json /app/client
 
 RUN npm install
 
